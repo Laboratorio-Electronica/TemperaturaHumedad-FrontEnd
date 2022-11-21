@@ -1,0 +1,50 @@
+:root{
+    --color-background: gray;
+    --size-width: 6.5rem;
+    --size-height: 1.5rem;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62,5%;
+    /* background-color: var(--color-background); */
+}
+
+.container-table {
+    width: min-content;
+    margin: 2rem auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-auto-flow: column;
+    /* grid-auto-rows: auto; */
+    gap: 0.1rem;
+    grid-auto-columns: max-content;
+    /* border: solid 2px black; */
+}
+
+.table-title{
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-rows: repeat(41, 1fr);
+    /* border: solid 1px black; */
+    gap: 0.25rem;
+}
+
+h3,
+h4,
+p{
+    border: solid 1px black;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.day{
+    font-weight: bolder;
+    background-color: rgb(224, 221, 221);
+    /* font-size: 1rem; */
+}

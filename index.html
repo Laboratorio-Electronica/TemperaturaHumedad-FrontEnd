@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css">
     <title>Document</title>
 </head>
 <body>
@@ -30,66 +31,64 @@
         <h1>Ingenico</h1>
         <h2>Registro de temperatura y humedad</h2>
 
-        <div id="show"></div>
+        <div>
+            <select name="month" id="month" onchange="getDate()">
+                <option value="Aug" selected>Agosto</option>
+                <option value="Sep">Septiembre</option>
+                <option value="Oct">Octubre</option>
+                <option value="Nov">Noviembre</option>
+            </select>
+            
+            <select name="year" id="year" onchange="getDate()">
+                <option value="22">2022</option>
+            </select>
+        </div>
 
-        <!-- <select name="month" id="month" onchange="getMonth()">
-            <option value="aug">Agosto</option>
-            <option value="sep">Septiembre</option>
-            <option value="oct">Octubre</option>
-            <option value="nov">Noviembre</option>
-        </select>
-
-        <select name="year" id="year">
-            <option value="2022">2022</option>
-        </select>
-        
-        <table class="default">
-            <tr>
-                <th></th>
-                <th>Dia</th>
-                <th>Hora</th>
-                <th>Laboratorio</th>
-                <th>Bodega</th>
-                <th>Dia</th>
-                <th>Hora</th>
-                <th>Laboratorio</th>
-                <th>Bodega</th>
-                <th>Dia</th>
-                <th>Hora</th>
-                <th>Laboratorio</th>
-                <th>Bodega</th>
-            </tr>
-            <tr>
-                <th>Temperatura</th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-            </tr>
-            <tr>
-                <th>Humedad</th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-            </tr>
-        </table> -->
+        <div class="container-table" id="table-data">
+            <div class="table-title">
+                <h3></h3>
+                <h4>Day</h4>
+                <h4>Hour</h4>
+                <h4>Temperature</h4>
+                <h4>Humidity</h4>
+                <h4>Day</h4>
+                <h4>Hour</h4>
+                <h4>Temperature</h4>
+                <h4>Humidity</h4>
+                <h4>Day</h4>
+                <h4>Hour</h4>
+                <h4>Temperature</h4>
+                <h4>Humidity</h4>
+                <h4>Day</h4>
+                <h4>Hour</h4>
+                <h4>Temperature</h4>
+                <h4>Humidity</h4>
+                <h4>Day</h4>
+                <h4>Hour</h4>
+                <h4>Temperature</h4>
+                <h4>Humidity</h4>
+                <h4>Day</h4>
+                <h4>Hour</h4>
+                <h4>Temperature</h4>
+                <h4>Humidity</h4>
+                <h4>Day</h4>
+                <h4>Hour</h4>
+                <h4>Temperature</h4>
+                <h4>Humidity</h4>
+                <h4>Day</h4>
+                <h4>Hour</h4>
+                <h4>Temperature</h4>
+                <h4>Humidity</h4>
+                <h4>Day</h4>
+                <h4>Hour</h4>
+                <h4>Temperature</h4>
+                <h4>Humidity</h4>
+                <h4>Day</h4>
+                <h4>Hour</h4>
+                <h4>Temperature</h4>
+                <h4>Humidity</h4>
+            </div>
+        </div>    
     </main>
     <footer></footer>
     <script src="./src/index.js"></script>
